@@ -6,8 +6,8 @@
 LOG_PATH="."
 LOG_FILE="logfile.log"
 LOG_LEVEL=DEBUG
-LOG_DATEFORMAT="%Y-%m-%d %H:%M:%S"
-LOG_MESSAGEFORMAT="[ %-19s ] - [ %-5s ] - %s\n"
+LOG_DATE_FORMAT="%Y-%m-%d %H:%M:%S"
+LOG_MESSAGE_FORMAT="[ %-19s ] - [ %-5s ] - %s\n"
 #################################################################################################
 
 function init_logger(){
@@ -63,8 +63,8 @@ function do_log(){
     local isEnabled_l=`echo ${LOG_LEVELS_ENABLED[@]} | grep "<$SEVERITY>"`
 
     if [ "${isEnabled_l}" != "" ]; then
-        local date_time_l=$(date +"$LOG_DATEFORMAT")
-        printf "$LOG_MESSAGEFORMAT" "$date_time_l" "$SEVERITY" "$*" >> $LOG_FILE
+        local date_time_l=$(date +"$LOG_DATE_FORMAT")
+        printf "$LOG_MESSAGE_FORMAT" "$date_time_l" "$SEVERITY" "$*" >> $LOG_PATH/$LOG_FILE
     fi
 }
 
