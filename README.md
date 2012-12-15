@@ -35,7 +35,7 @@ Using bash-logger functions
 ---------------------------
     log_fatal "Your Fatal message here"
     log_error "Your Error message here"
-    log_warning "Your Warning message here"
+    log_warn "Your Warning message here"
     log_info "Your Info message here"
     log_debug "Your Debug message here"
     log_trace "Your Trace message here"
