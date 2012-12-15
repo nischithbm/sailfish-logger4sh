@@ -2,10 +2,9 @@ bash-logger
 ===========
 
 bash-logger is a lightweight library used to simplify log generation in shell scripts.
----------------------------------------
+
 Configuration
 -------------
----------------------------------------
 
 Default Values
 
@@ -25,7 +24,7 @@ LOG_LEVEL
     TRACE
 
 Loading bash-logger
-
+-------------------
 You can load the bash-logger by calling the source file from your script
     source bash-logger.sh
     
@@ -34,7 +33,7 @@ You can load the bash-logger by calling the source file from your script
     . bash-logger.sh
     
 Using bash-logger functions
-
+---------------------------
     log_fatal "Your Fatal message here"
     log_error "Your Error message here"
     log_warning "Your Warning message here"
@@ -44,7 +43,7 @@ Using bash-logger functions
 
 
 Customization 
-
+-------------
 Once you load bash-logger by calling the source file from your script, <br />
 it will be initialized to the default configuration, which is specified above.<br />
 
@@ -62,11 +61,11 @@ If you want to override the default configurations. Say you want to change the L
 
 
 
-Happy Logging :-)
+
 
 
 
 
 <div class="footer">
-    &copy; 2012 Nischith B.M.
+   Happy Logging :-) &copy; 2012 Nischith B.M.
 </div>
