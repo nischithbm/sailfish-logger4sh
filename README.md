@@ -26,10 +26,9 @@ LOG_LEVEL
 Loading bash-logger
 -------------------
 You can load the bash-logger by calling the source file from your script
+
     source bash-logger.sh
-    
     # or 
-    
     . bash-logger.sh
     
 Using bash-logger functions
@@ -41,13 +40,13 @@ Using bash-logger functions
     log_debug "Your Debug message here"
     log_trace "Your Trace message here"
 
-
 Customization 
 -------------
 Once you load bash-logger by calling the source file from your script, <br />
 it will be initialized to the default configuration, which is specified above.<br />
 
-If you want to override the default configurations. Say you want to change the LOG_LEVEL to INFO
+If you want to override the default configurations.<br />
+Say you want to change the LOG_LEVEL to INFO
 
     # Load the source file
     source bash-logger.sh
@@ -60,12 +59,7 @@ If you want to override the default configurations. Say you want to change the L
 
 
 
-
-
-
-
-
-
+<br />
 <div class="footer">
    Happy Logging :-) &copy; 2012 Nischith B.M.
 </div>
