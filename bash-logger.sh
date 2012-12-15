@@ -58,13 +58,13 @@ function log_trace(){
 # do_log function should not be called directly. 
 #################################################################################################
 function do_log(){
-    SEVERITY=$1; shift
+    local LOG_SEVERITY=$1; shift
 
-    local isEnabled_l=`echo ${LOG_LEVELS_ENABLED[@]} | grep "<$SEVERITY>"`
+    local isEnabled_l=`echo ${LOG_LEVELS_ENABLED[@]} | grep "<$LOG_SEVERITY>"`
 
     if [ "${isEnabled_l}" != "" ]; then
         local date_time_l=$(date +"$LOG_DATE_FORMAT")
-        printf "$LOG_MESSAGE_FORMAT" "$date_time_l" "$SEVERITY" "$*" >> $LOG_PATH/$LOG_FILE
+        printf "$LOG_MESSAGE_FORMAT" "$date_time_l" "$LOG_SEVERITY" "$*" >> $LOG_PATH/$LOG_FILE
     fi
 }
 
