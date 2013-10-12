@@ -1,7 +1,7 @@
-bash-logger
-===========
+sailfish-logger.sh
+==================
 
-bash-logger is a lightweight library used to simplify log generation in shell scripts.
+sailfish-logger.sh is a lightweight library used to simplify log generation in shell scripts.
 
 Configuration
 -------------
@@ -23,15 +23,15 @@ LOG_LEVEL
     DEBUG
     TRACE
 
-Loading bash-logger
--------------------
+Loading sailfish-logger.sh
+--------------------------
 You can load the bash-logger by calling the source file from your script
 
-    source bash-logger.sh
+    source sailfish-logger.sh
     # or 
-    . bash-logger.sh
+    . sailfish-logger.sh
     
-Using bash-logger functions
+Using sailfish-logger.sh functions
 ---------------------------
     log_fatal "Your Fatal message here"
     log_error "Your Error message here"
@@ -42,14 +42,14 @@ Using bash-logger functions
 
 Customization 
 -------------
-Once you load bash-logger by calling the source file from your script, <br />
+Once you load sailfish-logger.sh by calling the source file from your script, <br />
 it will be initialized to the default configuration, which is specified above.<br />
 
 If you want to override the default configurations.<br />
 Say you want to change the LOG_LEVEL to INFO
 
     # Load the source file
-    source bash-logger.sh
+    source sailfish-logger.sh
 
     # Customize the logger
     LOG_LEVEL=INFO
