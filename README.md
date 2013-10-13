@@ -1,7 +1,7 @@
-sailfish-logger.sh
+sailfish-logger4sh
 ==================
 
-sailfish-logger.sh is a lightweight library used to simplify log generation in shell scripts.
+sailfish-logger4sh is a lightweight library used to simplify log generation in shell scripts.
 
 Configuration
 -------------
@@ -23,15 +23,15 @@ LOG_LEVEL
     DEBUG
     TRACE
 
-Loading sailfish-logger.sh
+Loading logger4sh
 --------------------------
-You can load the bash-logger by calling the source file from your script
+You can load the logger4sh by calling the source file from your script
 
-    source sailfish-logger.sh
+    source logger4sh
     # or 
-    . sailfish-logger.sh
+    . logger4sh
     
-Using sailfish-logger.sh functions
+Using logger4sh functions
 ---------------------------
     log_fatal "Your Fatal message here"
     log_error "Your Error message here"
@@ -42,14 +42,14 @@ Using sailfish-logger.sh functions
 
 Customization 
 -------------
-Once you load sailfish-logger.sh by calling the source file from your script, <br />
+Once you load logger4sh by calling the source file from your script, <br />
 it will be initialized to the default configuration, which is specified above.<br />
 
 If you want to override the default configurations.<br />
 Say you want to change the LOG_LEVEL to INFO
 
     # Load the source file
-    source sailfish-logger.sh
+    source logger4sh
 
     # Customize the logger
     LOG_LEVEL=INFO
